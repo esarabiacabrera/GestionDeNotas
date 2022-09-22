@@ -1,0 +1,86 @@
+.inicio-sesion {
+  background: url(imagenes/login.jpeg);
+}
+.navbar-color {
+  background-color: #e5bff5;
+}
+
+body {
+  background: #eee;
+}
+
+#side_nav {
+  background: #000;
+  min-width: 250px;
+  max-width: 250px;
+  transition: all 0.3s;
+}
+
+.content {
+  min-height: 100vh;
+  width: 100%;
+}
+
+hr.h-color {
+  background: #eee;
+}
+
+.sidebar li.active {
+  background: #eee;
+  border-radius: 8px;
+}
+
+.sidebar li.active a,
+.sidebar li.active a:hover {
+  color: #000;
+}
+
+.sidebar li a {
+  color: #fff;
+}
+
+@media (max-width: 767px) {
+  #side_nav {
+    margin-left: -250px;
+    position: fixed;
+    min-height: 100vh;
+    z-index: 1;
+  }
+
+  #side_nav.active {
+    margin-left: 0;
+  }
+}
+
+.admin {
+  background: url(imagenes/fondoAdmin.jpg);
+}
+
+.banner {
+  width: 50%;
+}
+
+.tamanio-tarjeta {
+  width: 18rem;
+  height: 450px;
+  margin-bottom: 15px;
+}
+.tamanio-tarjeta-docente {
+  width: 18rem;
+  height: 500px;
+  margin-bottom: 15px;
+}
+
+.imagenes {
+  margin: 10px;
+  width: 500px;
+  height: 400px;
+}
+
+.tamanio-tarjeta-docente a {
+  margin-top: 50px;
+}
+
+.titulo-tarjeta {
+  margin-bottom: 65px;
+}

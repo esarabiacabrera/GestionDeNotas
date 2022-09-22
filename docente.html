@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Docente</title>
+  <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css">
+
+  <!-- Agregar Fontawesome - Iconos para Pagina -->
+  <script src="https://kit.fontawesome.com/b6eb889ff5.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="admin">
+
+  <main>
+    <!-- Crear contenedor del sidebaar -->
+    <div class="main-container d-flex">
+      <div class="sidebar" id="side_nav">
+        <!-- Encuadre de la sidebar -->
+        <!--  -->
+        <div class="header-box px-2 pt-3 pb-4 d-flex justify-content-between">
+          <h1 class="fs-4">
+            <span class="bg-white text-dark rounded shadow px-2 me-2">GestNo</span>
+            <span class="text-white">Notas</span>
+          </h1>
+          <!-- Agregar boton de fontawesome -->
+          <button class="btn d-md-none d-block close-btn px-1 py-0 text-white">
+            <i class="fa-solid fa-bars-staggered"></i> </button>
+        </div>
+        <!-- Coloco lista de elementos a colocar -->
+        <!--  px-3 py-2 d-block - Dar separación entre elementos -->
+        <ul class="list-unstyled px-2">
+          <li class=""><a href="#" class="text-decoration-none px-3 py-2 d-block"><i class="fa-solid fa-house"></i>
+              Dashboard</a></li>
+          <li class=""><a href="#" class="text-decoration-none px-3 py-2 d-block"><i class="fa-solid fa-list"></i>
+              Projects</a></li>
+          <!-- Contenido pestaña mensaje -->
+          <li class=""><a href="#" class="text-decoration-none px-3 py-2 d-block d-flex justify-content-between">
+              <span><i class="fa-regular fa-comment"></i>Messages</span>
+              <span class="bg-dark rounded-pill text-white py-0 px-2">02</span>
+
+            </a></li>
+          <li class=""><a href="#" class="text-decoration-none px-3 py-2 d-block"><i class="fa-regular fa-envelope"></i>
+              Services</a></li>
+          <li class=""><a href="#" class="text-decoration-none px-3 py-2 d-block"><i class="fa-solid fa-user"></i>
+              Customers</a></li>
+        </ul>
+        <!-- Estilo CSS -->
+        <hr class="h-color mx-2">
+
+        <!-- Separando Setting de la lista principal -->
+
+        <ul class="list-unstyled px-2">
+          <li class=""><a href="#" class="text-decoration-none px-3 py-2 d-block"><i
+                class="fa-sharp fa-solid fa-gears"></i>
+              Settings</a></li>
+          <li class=""><a href="#" class="text-decoration-none px-3 py-2 d-block"><i class="fa-regular fa-bell"></i>
+              Notifications</a></li>
+        </ul>
+
+
+      </div>
+
+      <!-- Agrego el navbar de ejemplo de Bootstrap  -->
+      <div class="content">
+        <nav class="navbar navbar-expand-md navbar-light bg-light">
+          <div class="container-fluid">
+            <!-- agregar div.d-flex-->
+            <div class="d-flex justify-content-between d-md-none d-block">
+              <button class="btn px-1 py-0 open-btn me-2"><i class="fa-solid fa-bars-staggered"></i> </button>
+              <a class="navbar-brand fs-4" href="#"> <span
+                  class="bg-dark rounded px-2 py-0 text-white">GestNo</span></a>
+            </div>
+            <button class="navbar-toggler p-0 border-0" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <i class="fa-solid fa-bars-staggered"></i>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+              <!-- Quitar me-auto -->
+              <ul class="navbar-nav mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Profile</a>
+                </li>
+
+                <!-- Quitar li class="nav-item dropdown"  y demás -->
+
+              </ul>
+              <!-- Quitar class="d-flex" role="search" -->
+
+            </div>
+          </div>
+        </nav>
+
+        <div class="dashboard-content px-3 px-4">
+          <h2 class="fs-5">Dashboard</h2>
+          <section>
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="imagenes/banner1.jpg" class="d-block w-100 imagenes" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="imagenes/banner2.jpg" class="d-block w-100 imagenes" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="imagenes/banner3.jpg" class="d-block w-100 imagenes" alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </section>
+
+          <section>
+            <div class="container mt-5 ">
+              <div class="row">
+
+                <div class="col ">
+                  <div class="card tamanio-tarjeta-docente" id="registro">
+                    <img src="imagenes/programacion.jpg" class="card-img-top" alt="...">
+                    <div class="card-body mt-5">
+                      <h5 class="card-title">Programación</h5>
+                      <p class="card-text">El objetivo de esta matería es que los estudiantes aprendan logica de
+                        Programación.
+                      </p>
+                      <a href="#" class="btn btn-primary mt-5">Ir a registro</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="card tamanio-tarjeta-docente" id="materias">
+                    <img src="imagenes/habilidades.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title titulo-tarjeta">Couching</h5>
+                      <p class="card-text">El objetivo de esta matería es que los estudiantes aprendan sobre habilidades
+                        blandas
+                      </p>
+                      <a href="#" class="btn btn-primary mt-5">Ir a materias</a>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="col">
+                  <div class="card tamanio-tarjeta-docente" id="usuarios">
+                    <img src="imagenes/ingles.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Ingles</h5>
+                      <p class="card-text">El objetivo de esta matería es que los estudiantes se relacionen con otro
+                        idioma
+                      </p>
+                      <a href="#" class="btn btn-primary">Ir a usuarios</a>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+
+            </div>
+          </section>
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+  <!-- Agrego el siguiente script para apertura o cierre de la sidebar-->
+  <script>
+    $(".sidebar ul li").on('click', function () {
+      $(".sidebar ul li.active").removeClass("active");
+      $(this).addClass("active");
+    });
+
+    $('.open-btn').on('click', function () {
+      $('.sidebar').addClass('active');
+    });
+    $('.close-btn').on('click', function () {
+      $('.sidebar').removeClass('active');
+    });
+
+  </script>
+  <script src="index.js"></script>
+</body>
+
+</html>
