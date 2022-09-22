@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Estudiante</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+  <!-- ENCABEZADO -->
+  <header class="container-fluid bg-primary d-flex justify-content-center">
+    <p class="text-light mb-0 p-2 fs-6">Soporte: 3006837183 </p>
+  </header>
+
+  <nav class="navbar navbar-expand-lg bg-light p-3" Id="menu">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <span class=" text-primary fs-5 fw-bold">Estudiante</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="estudiante.html">Inicio</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">Perfil</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#materias">Materias</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#nosotros">Nosotros</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#seccion-contacto">Contacto</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="email" placeholder="Correo Electronico" aria-label="email">
+          <button class="btn btn-primary btn btn-primary-outline-success" type="button">Sugerencias</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- imagenesEstudiantes -->
+  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+
+      <div class="carousel-item active" data-bs-interval="3000">
+        <img src="imagenesEstudiantes/img_1.jpg" class="d-block w-100 h-100" alt="slide1">
+      </div>
+
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="imagenesEstudiantes/img_2.png" class="d-block w-100 h-100" alt="slide2">
+      </div>
+
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="imagenesEstudiantes/img_3.jpg" class="d-block w-100" alt="slide3">
+      </div>
+
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="imagenesEstudiantes/img_4.jpg" class="d-block w-100 h-100" alt="slide3">
+      </div>
+
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- Intro -->
+  <section class="w-50 mx-auto text-center pt-5" id="intro">
+    <h1 class="p-3 fs-2 border-top border-3"><span class="text-primary">Universidad Javeriana</span> #1 en Colombia por
+      cinco años consecutivos
+      <p class="p-3 fs-4">Según la última versión del ranking THE [Times Higher Education World University, Rankings].
+        En el ranking QS [World University Rankings] alcanza el puesto #3 de Colombia y el puesto # 14 en Latinoamérica.
+      </p>
+    </h1>
+
+  </section>
+
+  <!-- Materias -->
+  <section class="container-fluid" id="materias">
+    <div class="row w-75 mx-auto servicio-fila">
+
+      <div class="col-lg-6 col-md-12 col-sm-12 d-flex  my-5 icono-wrap">
+        <div class="card" style="width: 18rem;">
+          <img src="imagenesEstudiantes/materia1.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Logica de programación</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6 col-md-12 col-sm-12 d-flex my-5 icono-wrap">
+        <div class="card" style="width: 18rem;">
+          <img src="imagenesEstudiantes/materia2.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Arte</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row w-75 mx-auto servicio-fila">
+
+      <div class="col-lg-6 col-md-12 col-sm-12 d-flex my-5 icono-wrap">
+        <div class="card" style="width: 18rem;">
+          <img src="imagenesEstudiantes/materia3.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Ciberseguridad</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-lg-6 col-md-12 col-sm-12 d-flex my-5 icono-wrap">
+        <div class="card" style="width: 18rem;">
+          <img src="imagenesEstudiantes/img_4.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Calculo</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    </div>
+  </section>
+
+  <!-- acerca de nos0tros -->
+  <section class="w-75 m-auto text-center" id="nostros">
+    <div>
+      <h1 class="mb-5 fs-2"><span class="text-primary">Nosotros</span></h1>
+      <p>La Pontificia Universidad Javeriana es una institución católica de educación superior, fundada y regentada por
+        la Compañía de Jesús, comprometida con los principios educativos y las orientaciones de la entidad fundadora.
+      </p>
+    </div>
+    <div class="mt-5 text-center">
+      <img src="imagenesEstudiantes/img_2.png" class="img-fluid" alt="nosotros">
+    </div>
+  </section>
+
+
+  <!-- formulario -->
+  <section id="seccion-contacto" class="boder-bottom botder-secondary border-2">
+    <div id="bg-contacto">
+
+    </div>
+
+    <!-- formulario2 -->
+
+    <div class="container" id="contenedor-formulario">
+      <div id="titulo-formulario" class="text-center mb-4">
+        <div><img src="imagenesEstudiantes/support-removebg-preview.png" alt="contacto" class="img-fluid"></div>
+        <h2>Contactos</h2>
+        <p class="fs-5">Estamos aqui para hacer realidad tus sueños</p>
+      </div>
+      <form action="">
+
+        <div class="mb-3">
+          <input type="email" class="form-control" id="email" placeholder="nombre@ejemplo.com" required>
+        </div>
+
+        <div class="mb-3">
+          <input type="text" class="form-control" id="nombre" placeholder="Jose Mendoza" required>
+        </div>
+
+        <div class="mb-3">
+          <input type="tel" class="form-control" id="tel" placeholder="00-000-000" required>
+        </div>
+
+        <div class="mb-3">
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+            placeholder="Escribe tu mensaje"></textarea>
+        </div>
+        <div class="mb-3">
+          <button type="button" class="btn btn-primary w-100 fs-5">Enviar mensaje</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- pie de pagina -->
+  <footer class="w-100" d-flex aling-items justify-content-center flex-wrap>
+    <p class="fs-5 px3 pt3">Universidad Javeriana &copy; Todos los derechos reservados 2022</p>
+    <div id="iconos">
+      <a href=""><i class="bi bi-facebook"></i></a>
+      <a href=""><i class="bi bi-twitter"></i></a>
+      <a href=""><i class="bi bi-instagram"></i></a>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html
